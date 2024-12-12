@@ -55,6 +55,14 @@ button {
     cursor: pointer;
 }
 
+#btn{
+    background-color: #444;
+}
+#equal{
+    background-color: lightskyblue;
+    color: white;
+}
+
 button:hover {
     background-color: #727882;
 }
