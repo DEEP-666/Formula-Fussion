@@ -77,3 +77,24 @@ function LnFunction(){
     }
     input.value=Math.log(value);
 }
+function InvFunction() { 
+    const value = parseFloat(input.value); 
+    if (isNaN(value) || value === 0) { 
+        input.value = "Invalid"; return; 
+    } 
+    input.value = 1 / value; 
+} 
+
+function PowFunction() { 
+    input.value += "**"; 
+}
+function SqrtFunction() { 
+    const value = parseFloat(input.value); 
+    if (isNaN(value) || value < 0) { 
+    input.value = "Invalid"; return; 
+    } 
+    input.value = Math.sqrt(value); 
+}
+function PiFunction() {
+    input.value = Math.PI; 
+}
