@@ -1,14 +1,14 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="./style.css">
         <title>Calculator</title>
     </head>
     <body>
         <div class="calculator">
             <input placeholder="0" id="inputBox" readonly>
             <div>
-                <button onclick="" id="rad-deg-btn">Rad/Deg</button>
+                <button onclick="" id="rad-deg">Rad   |   Deg</button>
                 <button onclick="factorial()">x!</button>
                 <button onclick="Display('(')">(</button>
                 <button onclick="Display(')')">)</button>
@@ -19,36 +19,36 @@
                 <button onclick="">Inv</button>
                 <button onclick="SinFunction()">sin</button>
                 <button onclick="LnFunction()">ln</button>
-                <button onclick="Display('7')">7</button>
-                <button onclick="Display('8')">8</button>
-                <button onclick="Display('9')">9</button>
-                <button onclick="Display('/')">/</button>
+                <button onclick="Display('7')" class="special-btn">7</button>
+                <button onclick="Display('8')" class="special-btn">8</button>
+                <button onclick="Display('9')" class="special-btn">9</button>
+                <button onclick="Display('/')" style="font-size: 23px;">÷</button>
             </div>
             <div>
-                <button onclick="">pi</button>
+                <button onclick="">π</button>
                 <button onclick="CosFunction()">cos</button>
                 <button onclick="LogFunction()">log</button>
-                <button onclick="Display('4')">4</button>
-                <button onclick="Display('5')">5</button>
-                <button onclick="Display('6')">6</button>
-                <button onclick="Display('*')">*</button>
+                <button onclick="Display('4')" class="special-btn">4</button>
+                <button onclick="Display('5')" class="special-btn">5</button>
+                <button onclick="Display('6')" class="special-btn">6</button>
+                <button onclick="Display('*')" style="font-size: 17.5px;">x</button>
             </div>
             <div>
                 <button onclick="">e</button>
                 <button onclick="TanFunction()">tan</button>
                 <button onclick="">Root</button>
-                <button onclick="Display('1')">1</button>
-                <button onclick="Display('2')">2</button>
-                <button onclick="Display('3')">3</button>
+                <button onclick="Display('1')" class="special-btn">1</button>
+                <button onclick="Display('2')" class="special-btn">2</button>
+                <button onclick="Display('3')" class="special-btn">3</button>
                 <button onclick="Display('-')">-</button>
             </div>
             <div>
                 <button onclick="Calculate()">Ans</button>
                 <button onclick="Exponential()">EXP</button>
                 <button onclick="">x<sup>y</sup></button>
-                <button onclick="Display('0')">0</button>
-                <button onclick="Display('.')">.</button>
-                <button onclick="Calculate()">=</button>
+                <button onclick="Display('0')" class="special-btn">0</button>
+                <button onclick="Display('.')" class="special-btn">.</button>
+                <button onclick="Calculate()" id="equal-btn">=</button>
                 <button onclick="Display('+')">+</button>
             </div>
         </div>
