@@ -98,3 +98,6 @@ function SqrtFunction() {
 function PiFunction() {
     input.value = Math.PI; 
 }
+function EFunction() { 
+    input.value = Math.E; 
+}
