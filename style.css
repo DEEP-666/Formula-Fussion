@@ -1,0 +1,93 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #121212;
+    margin: 0;
+}
+
+.calculator {
+    background-color: #1e1e1e;
+    border-radius: 15px;
+    width: 880px; /* Adjusted to accommodate all buttons */
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Input display */
+#inputBox {
+    width: 97.5%; /* Adjusted to align with calculator width */
+    height: 70px;
+    border: none;
+    border-radius: 10px;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: right;
+    padding: 10px;
+    background-color: #2a2a2a;
+    color: #fff;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+
+#inputBox:focus {
+    outline: none;
+}
+
+/* Button styles */
+button {
+    width: 160px; 
+    height: 55px; 
+    margin: 5px;
+    border: none;
+    border-radius: 9px; 
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #a5a4a4b6;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #444;
+}
+
+button:active {
+    background-color: #555;
+    box-shadow: inset 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+ /* Special buttons */
+button:nth-child(9),
+button:nth-child(10),
+button:nth-child(11),
+button:nth-child(15),
+button:nth-child(16),
+button:nth-child(17),
+button:nth-child(16),
+button:nth-child(21),
+button:nth-child(22),
+button:nth-child(23),
+button:nth-child(26),
+button:nth-child(27),
+button:nth-child(28),
+button:nth-child(33),
+button:nth-child(34){
+    background-color: #181818;
+}
+
+
+/* Layout adjustments */
+.calculator div {
+    display: flex;
+    justify-content: space-around; /* Align all rows uniformly */
+}
+
+#rad-deg-btn {
+    width: 340px; /* for the first row to allign it properly with other row */
+}
