@@ -17,29 +17,36 @@ body {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
 
-
-/* Input display */
-#inputBox {
-    width: 96.9%;
+/* Input container */
+.input-container {
+    position: relative;
+    width: 100%;
     height: 70px;
+    margin-bottom: 40px;
+}
+
+.input-container input {
+    width: 100%;
+    height: 100%;
     border: solid #5f6267 1px;
     border-radius: 10px;
     font-size: 32px;
     font-weight: bold;
     text-align: right;
-    padding: 10px;
+    padding: 10px 10px 10px 50px; /* Adjust padding to make space for the button */
     background-color: #0f1217;
     color: #fff;
     box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.5);
-    margin-bottom: 20px;
     margin-right: 10px;
     margin-left: 10px;
 }
 
-
-#inputBox:focus {
+.input-container input:focus {
     outline: none;
 }
+
+
+
 
 /* Button styles */
 button {
@@ -49,7 +56,7 @@ button {
     border: none;
     border-radius: 9px;
     font-size: 20px;
-    font-weight:500; 
+    font-weight: 500;
     color: #fff;
     background-color: #5f6267;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
@@ -57,10 +64,11 @@ button {
     cursor: pointer;
 }
 
-#btn{
+#btn {
     background-color: #444;
 }
-#equal{
+
+#equal {
     background-color: lightskyblue;
     color: white;
 }
@@ -73,39 +81,38 @@ button:active {
     background-color: #727882;
     box-shadow: inset 0 4px 10px #727882;
     border: solid #757575 0.6px;
-
 }
 
 /* Special buttons */
-.special-btn{
+.special-btn {
     background-color: #3c4043;
 }
-.special-btn:hover{
+
+.special-btn:hover {
     background-color: #51565a;
 }
 
-.special-btn:active{
+.special-btn:active {
     background-color: #3c4043;
     box-shadow: none;
     border: solid #757575 0.6px;
 }
 
 /* Equal button */
-#equal-btn{
+#equal-btn {
     color: black;
     background-color: #aec6f6;
 }
 
-#equal-btn:hover{
+#equal-btn:hover {
     background-color: #a3b9e5;
 }
 
-#equal-btn:active{
+#equal-btn:active {
     background-color: #b4caf6;
     box-shadow: none;
     border: solid #cccc 0.6px;
 }
-
 
 /* Layout adjustments */
 .calculator div {
@@ -113,12 +120,43 @@ button:active {
     justify-content: space-between;
 }
 
-#rad-deg{
+#rad-deg {
     width: 340px;
 }
-#AC-btn{
+#AC-btn {
     background-color: #043154;
 }
-#del-btn{
+#del-btn {
     background-color: #043154;
+}
+
+/* History button inside input */
+#history-btn {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 35px;
+    height: 35px;
+    font-size: 18px;
+    background-color: #0f1217;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 14px;
+    margin-left: 10px;
+}
+
+#history-btn:hover {
+    background-color: #0f1217;
+}
+
+#history-btn:active {
+    background-color: #0f1217;
+    box-shadow: none;
+}
+img{
+    width: 30px;
+    height: 30px;
 }
