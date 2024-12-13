@@ -2,21 +2,24 @@
 <html>
     <head>
         <link rel="stylesheet" href="./style.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
         <title>Calculator</title>
     </head>
     <body>
         <div class="calculator">
-            <input placeholder="0" id="inputBox" readonly>
+            <div class="input-container">
+                
+                <input placeholder="0" id="inputBox" readonly>
+            </div>
+
             <div>
-                <button onclick="DeleteLastCharacter()" id="del-btn">DEL</button>
-                <button onclick="toggleHistory()" id="history-btn">History</button>
-                <button onclick="" id="rad-deg-btn">Rad/Deg</button>
                 <button onclick="" id="rad-deg">Rad | Deg</button>
                 <button onclick="factorial()">x!</button>
                 <button onclick="Display('(')">(</button>
                 <button onclick="Display(')')">)</button>
                 <button onclick="Display('%')">%</button>
-                <button onclick="ClearDisplay()">AC</button>
+                <button onclick="" id="del-btn"><i class="material-icons" style="font-size:17px">backspace</i></button>
             </div>
             <div>
                 <button onclick="InvFunction()">Inv</button>
@@ -34,7 +37,7 @@
                 <button onclick="Display('4')" id="btn">4</button>
                 <button onclick="Display('5')" id="btn">5</button>
                 <button onclick="Display('6')" id="btn">6</button>
-                <button onclick="Display('*')">*</button>
+                <button onclick="Display('*')">×</button>
             </div>
             <div>
                 <button onclick="EFunction()">e</button>
@@ -46,12 +49,12 @@
                 <button onclick="Display('-')">-</button>
             </div>
             <div>
-                <button onclick="Calculate()">Ans</button>
+                <button onclick="ClearDisplay()" id="AC-btn">AC</button>
                 <button onclick="Exponential()">EXP</button>
                 <button onclick="">x<sup>y</sup></button>
                 <button onclick="Display('0')" id="btn">0</button>
                 <button onclick="Display('.')" id="btn">.</button>
-                <button onclick="Calculate()" id="equal">=</button>
+                <button onclick="Calculate()" id="equal-btn">=</button>
                 <button onclick="Display('+')">+</button>
             </div>
         </div>
